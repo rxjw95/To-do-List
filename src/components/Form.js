@@ -1,10 +1,15 @@
 import React from "react";
 import "./Form.css";
 
-const Form = ({ value, onChange, onCreate, onkeyPress }) => {
+const Form = ({ value, color, onChange, onCreate, onkeyPress }) => {
   return (
     <div className="form">
-      <input value={value} onChange={onChange} onKeyPress={onkeyPress} />
+      <input
+        value={value}
+        onChange={onChange}
+        onKeyPress={onkeyPress}
+        style={{ color }}
+      />
       <div className="create-button" onClick={onCreate}>
         등록
       </div>
