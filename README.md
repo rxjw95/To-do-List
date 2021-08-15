@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# 첫 번째 todo-list
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 계기
+- 회사에서 다른 그룹에 지원을 나가게 되었는데, react 페이지를 하나 만드는 것이었다. 하지만 나는 javascript를 학교에서도 수업을 듣지 않아서 지식이 한참 부족했다.
+- 그래서 사전 공부는 2주, 당장 해야할 것은 `javascript`와 `react` 공부
 
-## Available Scripts
+## 공부 방법
+1. 책을 통째로 읽는다.
+2. 무언가를 일단 만든다.
+3. 같이 병행한다.
 
-In the project directory, you can run:
+> 나는 2번을 택했다. 
 
-### `yarn start`
+하지만, 단순히 따라하는 것은 결국 까먹는다. 그래서 우선 강의에 임하기 전에 react의 전반적인 원리를 공부했다.   
+그리고 강의를 따라가다 으음? 하는 것들은 다시 찾아본다. 이렇게 공부를 하다보니 계속 react의 동작을 생각하게 되었고, 강의를 듣다보면 여러 기능이 있는 메서드지만 해당 강의에서 사용되는 기능만을 알려주는 때가 종종 있었다. (useRef는 값 변경시 리렌더되지않는 기능, *DOM 접근이 가능하는 기능* 등)   
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+추가적으로 javascript를 공부했다.   
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+로직을 작성할 때 `let`, `var`, `const`나 `{}`, `[]`, `this`를 비롯해서 주로 사용하는 `map`, `filter`, `concat`, `slice`, `spread operator`, `destructuring assignment`, `computed properties`, `arrow function` 등 es6+로 작성하는데
 
-### `yarn test`
+> 나의 javascript 실력은 0에 수렴한다. (javascript 뿐만이 아닐지도)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 기능
+- todo item 생성, 제거, toggle 기능(중간선 긋기)
+- 렌더링 최적화 맛보기 (shouldComponentUpdate)
+- class형 컴포넌트를 사용했다. 그 이유는 react의 라이프사이클에 대해서 먼저 이해하고 넘어가지는 취지였다.
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 회고
+- 프론트엔드라는 영역에 새로운 감회를 느꼈다. 빠르고 유연하게 움직이는 화면에 대한 만족감과 누군가 내가 만든 화면과 상호작용할 수 있다는 생각에 두근거림이 있었다.
+- 반면 javascript의 자유도에 엄청난 고통을 받았다. android나 spring을 해서인지 java 라는 틀에 갇혀있다는 것과는 다르다(내가 java를 잘 아는 것도 아니니까). 그냥 scope에 따른 동작과 function, this 같이 뭐 알만한 것도 다 다르더라.
+- 공부하다보니 더 공부해야했고, 더 공부하니 더 공부할게 많고 깊어지더라.
